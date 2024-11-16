@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Моє портфоліо</title>
+    <style>
+        /* Основні стилі для сторінки */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .about, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .about div, .project-card {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 45%;
+            border-radius: 8px;
+        }
+
+        .about img, .project-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .about div h3, .project-card h3 {
+            font-size: 1.5rem;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .project-card p {
+            text-align: center;
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .project-card a {
+            display: block;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .project-card a:hover {
+            background-color: #444;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .about div, .project-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Моє Портфоліо</h1>
+    </header>
+
+    <nav>
+        <a href="#about">Про мене</a>
+        <a href="#projects">Проекти</a>
+        <a href="#contact">Контакти</a>
+    </nav>
+
+    <section id="about" class="container">
+        <h2>Про мене</h2>
+        <div class="about">
+            <div>
+                <img src="https://i.postimg.cc/15v0cVd6/photo-5314628215114950183-y.jpg" alt="Моє фото">
+                <h3>Кабацій Антон. Веб розробник.</h3>
+                <p>Я займаюся веб-розробкою та створенням сучасних веб-сайтів та додатків. Маю досвід роботи з HTML, CSS, JavaScript та різними фреймворками.</p>
+            </div>
+            <div>
+                <h3>Мої навички</h3>
+                <ul>
+                    <li>HTML5, CSS3</li>
+                    <li>JavaScript, React</li>
+                    <li>Node.js, Express</li>
+                    <li>Git, GitHub</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Мої проекти</h2>
+        <div class="projects">
+            <div class="project-card">
+                <img src="https://i.postimg.cc/DZB7ZqyC/DALL-E-2024-11-08-16-20-47-A-retro-styled-tank-video-game-scene-inspired-by-classic-arcade-games.webp" alt="Проект 1">
+                <h3>Танчики</h3>
+                <p>"Танчики" — це сучасний переосмислення класичної аркадної гри про танки. Гравці керують танком, рухаючись по полю, знищують ворогів і уникають пасток. Гра має топ-даун вигляд, яскраві кольори та елементи ретро-стилю. Поле бою складене з блоків, дерев та інших перешкод, які додають складності й вимагають стратегічного планування.
+
+                    Гравці можуть вдосконалювати свій танк, збираючи бонуси та нову зброю. З кожним рівнем складність збільшується, з'являються нові вороги та перешкоди, що робить гру захопливою і динамічною..</p>
+                <a href="https://anton09052012.github.io/tanks/
+                ">Переглянути проект</a>
+            </div>
+            <div class="project-card">
+                <img src="https://i.postimg.cc/1R791cdX/DALL-E-2024-11-08-16-23-50-A-retro-style-Tetris-game-scene-with-bright-colorful-blocks-falling-in.webp" alt="Проект 2">
+                <h3>Тетріс</h3>
+                <p> "Тетріс" — це сучасна версія класичної головоломки, яка пропонує гравцям захоплюючий ігровий досвід з ретро-естетикою. Гравцям потрібно маніпулювати падаючими блоками різної форми, щоб створювати цілі ряди і очищувати їх. Чим більше рядів очищено за один раз, тим більше очок заробляє гравець.
+
+                    Ігровий процес поступово ускладнюється зі збільшенням швидкості падіння блоків, що вимагає від гравця швидкості реакції та обдуманої стратегії. Яскраві кольори, плавна анімація та знайомий геймплей роблять вашу версію "Тетріса" привабливою для нових гравців та прихильників класики..</p>
+                <a href="https://anton09052012.github.io/tanks/
+                ">Переглянути проект</a>
+            </div>
+            <div class="project-card">
+                <img src="https://i.postimg.cc/mkVxVRF8/DALL-E-2024-11-08-16-27-25-A-retro-style-racing-game-scene-with-pixelated-cars-on-a-simple-racetra.webp">
+                <h3>Машинки</h3>
+                <p>"Машинки" — це динамічний гоночний симулятор, натхненний класичними аркадними іграми. Гравці керують різнокольоровими автомобілями, які змагаються на простих трасах з вигинами, перешкодами та спеціальними бонусами. Гра має вигляд зверху, що дозволяє гравцям легко орієнтуватися на трасі та передбачати маневри суперників.
+                    Геймплей побудований на швидкості, реакції та обережності, адже траси поступово стають складнішими, а автомобілі отримують можливість покращувати швидкість і маневреність. Яскраві кольори, ретро-стиль і захоплюючі гонки роблять вашу гру привабливою для всіх, хто любить класичні гонки та ретро-атмосферу.</p>
+                <a href="https://anton09052012.github.io/need-for-speed/">Переглянути проект</a>
+            </div>
+            <div class="project-card">
+                <img src="https://i.postimg.cc/JnXKp7X8/DALL-E-2024-11-16-11-25-36-A-vibrant-and-playful-depiction-of-a-classic-Snake-video-game-The-back.webp">
+                <h3>Змійка</h3>
+                <p> "Змійка" — це класична аркадна гра, в якій ви керуєте змійкою, що постійно рухається по екрану, збираючи їжу. Кожен раз, коли змійка з'їдає їжу, її довжина збільшується, і гра стає складнішою. Ваше завдання — уникати зіткнень зі стінами або самим собою.</p>
+                <a href="
+                https://anton09052012.github.io/snake/
+                ">Переглянути проект</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Контакти</h2>
+        <p>Ви можете зв'язатися зі мною за допомогою наступних контактних даних:</p>
+        <ul>
+            <li>Email: example@example.com</li>
+            <li>Телефон: +38 012 345 6789</li>
+            <li>GitHub: <a href="https://github.com" target="_blank">Мій GitHub</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Моє Портфоліо. Всі права захищені.</p>
+    </footer>
+
+</body>
+</html>
